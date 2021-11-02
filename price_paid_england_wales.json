@@ -1,0 +1,93 @@
+[
+    {
+        "name": "transaction_unique_identifier",
+        "description": "Generated automatically recording each published sale. Changes each time a sale is recorded.",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "price",
+        "description": "Sale price stated on the transfer deed.",
+        "type": "INTEGER",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "date_of_transfer",
+        "description": "Date when the sale was completed, as stated on the transfer deed.",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "postcode",
+        "description": "Postcode used at the time of the original transaction. Note that postcodes can be reallocated and these changes are not reflected in the Price Paid Dataset.",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "property_type",
+        "description": "D = Detached, S = Semi-Detached, T = Terraced, F = Flats/Maisonettes, O = Other",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "old_new",
+        "description": "Y = a newly built property, N = an established residential building",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "duration",
+        "description": "Relates to the tenure: F = Freehold, L= Leasehold etc.",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "primary_addressable_object_name",
+        "description": "Typically the house number or name.",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "secondary_addressable_object_name",
+        "description": "Where a property has been divided into separate units (for example, flats), the PAON will identify the building and a SAON will be specified that identifies the separate unit/flat.",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "street",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "locality",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "town_city",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "district",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "county",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "ppd_category_type",
+        "description": "A = Standard Price Paid entry, includes single residential property sold for value. B = Additional Price Paid entry including transfers under a power of sale/repossessions, buy-to-lets (where they can be identified by a Mortgage), transfers to non-private individuals and sales where the property type is classed as ‘Other’.",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "record_status",
+        "description": "A = Addition, C = Change, D = Delete. Applicable to monthly files.",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    }
+]
