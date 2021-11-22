@@ -1,0 +1,8 @@
+[
+    {
+        "name": "postcode",
+        "description": "Postcode for which Xoserve hold no record of a gas connection by either large or small gas transporters.",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    }
+]
