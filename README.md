@@ -1,6 +1,6 @@
 # bigquery-schemas
 
-BigQuery schemas for datasets used at Centre for Net Zero.
+BigQuery schemas for publicly available datasets used at Centre for Net Zero.
 
 ## Descriptions
 
